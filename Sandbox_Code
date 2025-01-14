@@ -1,7 +1,7 @@
 //Programmer: Justin Suiter
 //Date: 1.13.24
 //Programmer: Sandbox
-//Hardware: Bolt#SB-3DFF
+//Hardware: Bolt #SB-3DFF
 
 async function startProgram() {
 	await roll(0, 200, 2)
