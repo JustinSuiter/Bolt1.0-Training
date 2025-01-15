@@ -3,11 +3,13 @@
 //Programmer: Pre-Competition
 //Hardware: Bolt #SB-3DFF
 
+//Begin Code
+async function startProgram() {
+
 //start
 //Bolt will say Start Across the LED's
 //Driver: Ethan Condon
 //Navigator: Justin Suiter
-async function startProgram() {
 	await setMainLed({ r:255, g: 0, b: 0});
 	await speak("Start", true);
 	await delay(2);
@@ -18,7 +20,7 @@ async function startProgram() {
 //Bolts LED will Turn Red
 //Driver: Justin Suiter
 //Navigator: Ethan Condon
-setMainLed({ r: 255, g: 0, b: 0 })
+setMainLed({ r: 255, g: 0, b: 0 });
 
 
 
@@ -40,7 +42,5 @@ setMainLed({ r: 255, g: 0, b: 0 })
 //Play Sound
 //Driver: Justin Suiter
 //Navigator: Ethan Condon
-
-	
-
+	await Sound.Animal.play(true);
 }
