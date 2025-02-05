@@ -45,10 +45,15 @@ async function startProgram() {
   // Sound #2 Checkpoint
   // Driver: Ethan Condon
   // Navigator: Justin Suiter
-	await (.5);
-	await roll(-230,60,.8);
-	await delay(.5);
-	await roll(-320,60,.8);
+  await (.5);
+	await setHeading(-230, true);
+	await delay(1);
+	setSpeed(60);
+	await delay(.6);
+	setSpeed(0);
+	await delay(1);
+	await roll(-320,60,1.1);
+	await Sound.Animal.Monkey.play(true);
 
   // Purple Checkpoint
   // LED's turn Purple
