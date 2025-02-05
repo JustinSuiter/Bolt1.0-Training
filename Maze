@@ -59,7 +59,10 @@ async function startProgram() {
   // LED's turn Purple
   // Driver: Justin Suiter
   // Navigator: Ethan Condon
-
+  await roll(-230, 60, 1.2);
+  	await delay(1);
+  	await roll(-185, 60, .55);
+  	await setMainLed({ r: 255, g:0, b: 255 });
   // Sound #3 Checkpoint
   // Driver: Ethan Condon
   // Navigator: Justin Suiter
